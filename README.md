@@ -1,2 +1,2 @@
-# C-Quize
+# C#-Quiz
 C# Quize durva pali
