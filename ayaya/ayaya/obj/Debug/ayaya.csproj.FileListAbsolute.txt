@@ -1,0 +1,16 @@
+C:\Users\Diák\source\repos\ayaya\ayaya\obj\Debug\ayaya.csproj.AssemblyReference.cache
+C:\Users\Diák\source\repos\ayaya\ayaya\obj\Debug\ayaya.csproj.SuggestedBindingRedirects.cache
+C:\Users\Diák\source\repos\ayaya\ayaya\obj\Debug\ayaya.csproj.CoreCompileInputs.cache
+C:\Users\Diák\source\repos\ayaya\ayaya\bin\Debug\ayaya.exe.config
+C:\Users\Diák\source\repos\ayaya\ayaya\bin\Debug\ayaya.exe
+C:\Users\Diák\source\repos\ayaya\ayaya\bin\Debug\ayaya.pdb
+C:\Users\Diák\source\repos\ayaya\ayaya\obj\Debug\ayaya.exe
+C:\Users\Diák\source\repos\ayaya\ayaya\obj\Debug\ayaya.pdb
+C:\Users\toth_patrik_andras\Desktop\ayaya\ayaya\bin\Debug\ayaya.exe.config
+C:\Users\toth_patrik_andras\Desktop\ayaya\ayaya\bin\Debug\ayaya.exe
+C:\Users\toth_patrik_andras\Desktop\ayaya\ayaya\bin\Debug\ayaya.pdb
+C:\Users\toth_patrik_andras\Desktop\ayaya\ayaya\obj\Debug\ayaya.csproj.AssemblyReference.cache
+C:\Users\toth_patrik_andras\Desktop\ayaya\ayaya\obj\Debug\ayaya.csproj.SuggestedBindingRedirects.cache
+C:\Users\toth_patrik_andras\Desktop\ayaya\ayaya\obj\Debug\ayaya.csproj.CoreCompileInputs.cache
+C:\Users\toth_patrik_andras\Desktop\ayaya\ayaya\obj\Debug\ayaya.exe
+C:\Users\toth_patrik_andras\Desktop\ayaya\ayaya\obj\Debug\ayaya.pdb
