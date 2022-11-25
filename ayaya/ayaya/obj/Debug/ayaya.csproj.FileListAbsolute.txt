@@ -14,3 +14,11 @@ C:\Users\toth_patrik_andras\Desktop\ayaya\ayaya\obj\Debug\ayaya.csproj.Suggested
 C:\Users\toth_patrik_andras\Desktop\ayaya\ayaya\obj\Debug\ayaya.csproj.CoreCompileInputs.cache
 C:\Users\toth_patrik_andras\Desktop\ayaya\ayaya\obj\Debug\ayaya.exe
 C:\Users\toth_patrik_andras\Desktop\ayaya\ayaya\obj\Debug\ayaya.pdb
+C:\Users\toth_patrik_andras\Source\Repos\W46iC\C-Quize\ayaya\ayaya\obj\Debug\ayaya.csproj.AssemblyReference.cache
+C:\Users\toth_patrik_andras\Source\Repos\W46iC\C-Quize\ayaya\ayaya\obj\Debug\ayaya.csproj.SuggestedBindingRedirects.cache
+C:\Users\toth_patrik_andras\Source\Repos\W46iC\C-Quize\ayaya\ayaya\obj\Debug\ayaya.csproj.CoreCompileInputs.cache
+C:\Users\toth_patrik_andras\Source\Repos\W46iC\C-Quize\ayaya\ayaya\obj\Debug\ayaya.exe
+C:\Users\toth_patrik_andras\Source\Repos\W46iC\C-Quize\ayaya\ayaya\obj\Debug\ayaya.pdb
+C:\Users\toth_patrik_andras\Source\Repos\W46iC\C-Quize\ayaya\ayaya\bin\Debug\ayaya.exe.config
+C:\Users\toth_patrik_andras\Source\Repos\W46iC\C-Quize\ayaya\ayaya\bin\Debug\ayaya.exe
+C:\Users\toth_patrik_andras\Source\Repos\W46iC\C-Quize\ayaya\ayaya\bin\Debug\ayaya.pdb

@@ -14,11 +14,14 @@ namespace ayaya
         public string valaszb;
         public string valaszc;
         public string valaszd;
+        public string helyes;
 
     }
     internal class Program
     {
         static List<adatok> kerdva = new List<adatok>();
+
+        static Random rand = new Random();
 
         static int beolvasas(string fileName)
         {
@@ -33,6 +36,8 @@ namespace ayaya
                 adatok.valaszb = temp[2];
                 adatok.valaszc = temp[3];
                 adatok.valaszd = temp[4];
+                
+                adatok.helyes = temp[5];
 
                 kerdva.Add(adatok);
    
@@ -50,16 +55,58 @@ namespace ayaya
 
             while (!(valasz.ToLower() == "a" || valasz.ToLower() == "b" || valasz.ToLower() == "c" || valasz.ToLower() == "d")) {
 
-                Console.WriteLine();
-            
+                Console.WriteLine("a/b/c/d választ adjon meg!");
+
+
+                Console.WriteLine("Adja meg válaszát: ");
+                valasz = Console.ReadLine();
+
+
             }
+            return valasz;
 
         }
+
+       
+
 
         static void Main(string[] args)
         {
             Console.WriteLine(beolvasas("kerdesek-valaszok.txt"));
             
+
+            HashSet<int> hash = new HashSet<int>();
+
+            while (hash.Count <= 5)
+            {
+                hash.Add(rand.Next(1, 13));
+            }
+
+            int helyescount = 0;
+
+            foreach (var i in hash) {
+
+                Console.WriteLine($"{kerdva[i-1].kerdes}");
+                Console.WriteLine($"{kerdva[i - 1].valasza}");
+                Console.WriteLine($"{kerdva[i - 1].valaszb}");
+                Console.WriteLine($"{kerdva[i - 1].valaszc}");
+                Console.WriteLine($"{kerdva[i - 1].valaszd}");
+
+
+                if (valaszbekeres() == kerdva[i - 1].helyes)
+                {
+
+                    Console.WriteLine("Helyes");
+                    helyescount++;
+                }
+                else {
+
+                    Console.WriteLine("Helytelen");
+                
+                }
+            }
+
+            Console.WriteLine($"Pontok: {helyescount}");
 
             Console.ReadKey();
         }
