@@ -50,20 +50,22 @@ namespace ayaya
         static string valaszbekeres()
         {
 
-            Console.WriteLine("Adja meg válaszát: ");
+            Console.WriteLine(" \n Adja meg válaszát(a/b/c/d): ");
+            Console.WriteLine("------------------------------------------------------------------------------------------------------------------------");
+
             string valasz = Console.ReadLine();
 
             while (!(valasz.ToLower() == "a" || valasz.ToLower() == "b" || valasz.ToLower() == "c" || valasz.ToLower() == "d")) {
 
                 Console.WriteLine("a/b/c/d választ adjon meg!");
 
-
-                Console.WriteLine("Adja meg válaszát: ");
+                Console.WriteLine("------------------------------------------------------------------------------------------------------------------------");
+                Console.WriteLine("Adja meg válaszát(a/b/c/d): ");
                 valasz = Console.ReadLine();
 
 
             }
-            return valasz;
+            return valasz.ToLower();
 
         }
 
@@ -72,7 +74,23 @@ namespace ayaya
 
         static void Main(string[] args)
         {
-            Console.WriteLine(beolvasas("kerdesek-valaszok.txt"));
+            string cim = @"                                                                                                 
+    ,---,                  ,---,                ,----..                                          
+  .'  .' `\              .'  .' `\             /   /   \                    ,--,                 
+,---.'     \           ,---.'     \           /   .     :            ,--, ,--.'|          ,----, 
+|   |  .`\  |,--,  ,--,|   |  .`\  |         .   /   ;.  \         ,'_ /| |  |,         .'   .`| 
+:   : |  '  ||'. \/ .`|:   : |  '  |        .   ;   /  ` ;    .--. |  | : `--'_      .'   .'  .' 
+|   ' '  ;  :'  \/  / ;|   ' '  ;  :        ;   |  ; \ ; |  ,'_ /| :  . | ,' ,'|   ,---, '   ./  
+'   | ;  .  | \  \.' / '   | ;  .  |        |   :  | ; | '  |  ' | |  . . '  | |   ;   | .'  /   
+|   | :  |  '  \  ;  ; |   | :  |  '        .   |  ' ' ' :  |  | ' |  | | |  | :   `---' /  ;--, 
+'   : | /  ;  / \  \  \'   : | /  ;         '   ;  \; /  |  :  | : ;  ; | '  : |__   /  /  / .`| 
+|   | '` ,/ ./__;   ;  \   | '` ,/           \   \  ',  . \ '  :  `--'   \|  | '.'|./__;     .'  
+;   :  .'   |   :/\  \ ;   :  .'              ;   :      ; |:  ,      .-./;  :    ;;   |  .'     
+|   ,.'     `---'  `--`|   ,.'                 \   \ .'`--""  `--`----'    |  ,   / `---'         
+'---'                  '---'                    `---`                      ---`-'               ";
+            Console.WriteLine(cim);
+
+            beolvasas("kerdesek-valaszok.txt");
             
 
             HashSet<int> hash = new HashSet<int>();
@@ -85,24 +103,31 @@ namespace ayaya
             int helyescount = 0;
 
             foreach (var i in hash) {
-
-                Console.WriteLine($"{kerdva[i-1].kerdes}");
-                Console.WriteLine($"{kerdva[i - 1].valasza}");
-                Console.WriteLine($"{kerdva[i - 1].valaszb}");
-                Console.WriteLine($"{kerdva[i - 1].valaszc}");
-                Console.WriteLine($"{kerdva[i - 1].valaszd}");
+                Console.WriteLine("------------------------------------------------------------------------------------------------------------------------");
+                Console.WriteLine($" \t{kerdva[i-1].kerdes} \n");
+                Console.WriteLine($"a){kerdva[i - 1].valasza}");
+                Console.WriteLine($"b){kerdva[i - 1].valaszb}");
+                Console.WriteLine($"c){kerdva[i - 1].valaszc}");
+                Console.WriteLine($"d){kerdva[i - 1].valaszd} \n");
+                Console.WriteLine("------------------------------------------------------------------------------------------------------------------------");
 
 
                 if (valaszbekeres() == kerdva[i - 1].helyes)
                 {
-
+                    Console.WriteLine("------------------------------------------------------------------------------------------------------------------------");
                     Console.WriteLine("Helyes");
                     helyescount++;
+                    Console.Beep();
+
                 }
                 else {
+                    Console.WriteLine("------------------------------------------------------------------------------------------------------------------------");
 
                     Console.WriteLine("Helytelen");
-                
+                    Console.Beep();
+                    Console.Beep();
+
+
                 }
             }
 
