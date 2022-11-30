@@ -60,6 +60,7 @@ namespace ayaya
                 Console.WriteLine("a/b/c/d választ adjon meg!");
 
                 Console.WriteLine("------------------------------------------------------------------------------------------------------------------------");
+                Console.WriteLine("A B C D válasz lehetőséget adjon meg! \n");
                 Console.WriteLine("Adja meg válaszát(a/b/c/d): ");
                 valasz = Console.ReadLine();
 
@@ -137,3 +138,4 @@ namespace ayaya
         }
     }
 }
+
